@@ -130,16 +130,6 @@ section {
     text-align: center;
 }
 
-.intro h2 {
-    display: inline-block;
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #fce138;
-}
-
 .intro p {
     line-height: 1,7;
     color: #39a6b2;
@@ -148,7 +138,7 @@ section {
     margin: 0 auto;
 }
 
-.sectoin-title {
+.section-title {
     font-size: 55px;
     color: #024e76;
     margin-bottom: 35px;
@@ -163,6 +153,11 @@ section {
 
 .secondary-border {
     border-color: #39a6b2;
+}
+
+.steps {
+    text-align: center;
+    background: #fce138;
 }
 
 .steps div {
