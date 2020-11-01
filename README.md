@@ -12,3 +12,5 @@ https://bbec0689.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Dave B.
+
+### ©️2019 Run Buddy, Inc 
