@@ -335,13 +335,6 @@ section {
     font-size: 18px;
 }
 
-.trainer {
-    margin: 20px;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    flex: 1;
-}
-
 .trainers {
     width: 100%;
     margin: 0 auto;
@@ -350,8 +343,67 @@ section {
     justify-content: space-around;
 }
 
-.trainer img {
+.trainer {
+    margin: 20px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    flex: 1;
+}
+
+.trainer-1 {
+    background-image: url("../images/trainer-1.jpg");
+}
+
+.trainer-2 {
+    background-image: url("../images/trainer-2.jpg");
+}
+
+.trainer-3 {
+    background-image: url("../images/trainer-3.jpg");
+}
+
+.trainer-img {
+    position: relative;
     width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(252, 225, 56, 0.3), #024e76);
+    opacity: 1;
+    transition: opacity 0.6s ease-in;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    top: 0px;
+}
+
+.trainer-img h3 {
+    top: 200px;
+    transition: 0.6s;
+    position: relative;
+    font-size: 28px;
+    z-index: 9999;
+    margin-bottom: 5px;
+}
+
+.trainer-img h4 {
+    top: 200px;
+    transition: 0.6s;
+    position: relative;
+    font-size: 22px;
+    z-index: 9999;
 }
 
 .trainer-bio {
@@ -361,12 +413,14 @@ section {
 
 .trainer-bio h3 {
     font-size: 28px;
+    display: none;
 }
 
 .trainer-bio h4 {
     font-weight: lighter;
     font-size: 22px;
     margin-bottom: 15px;
+    display: none;
 }
 
 .trainer-bio p {
@@ -629,6 +683,14 @@ section {
 
     .trainer {
         flex: 0 100%;
+    }
+
+    .trainer-img, .trainer-img h4, .trainer-img::after {
+        display: none;
+    }
+
+    .trainer-bio h3, .trainer-bio h4 {
+        display: block;
     }
 
     .contact-info {
